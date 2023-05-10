@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player/Weapons/Gun.tscn" type="PackedScene" id=1]
+
+[sub_resource type="CylinderMesh" id=1]
+
+[node name="SMG" instance=ExtResource( 1 )]
+id = 2
+
+[node name="MeshInstance3D" parent="." index="0"]
+mesh = SubResource( 1 )

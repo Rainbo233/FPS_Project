@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player/Weapons/Gun.gd" type="Script" id=1]
+
+[sub_resource type="BoxMesh" id=5]
+
+[node name="Gun" type="Node3D"]
+script = ExtResource( 1 )
+fire_rate = 0.22
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D( 0.035, 0, 0, 0, 0.035, 0, 0, 0, 0.035, 0.123, 0.739, -1.089 )
+mesh = SubResource( 5 )
+
+[node name="FireRateTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
